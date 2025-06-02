@@ -1,0 +1,21 @@
+{
+  "name": "Libur.in App",
+  "short_name": "Libur.in",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8b4252",
+  "description": "Aplikasi pelaporan dan bookmark destinasi wisata.",
+  "icons": [
+    {
+      "src": "images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "liburinapp",
+  "version": "1.0.0",
+  "description": "Libur.in App adalah aplikasi jelajah wisata lokal yang membantu pengguna menemukan tempat wisata terdekat dengan ulasan, rute tercepat, dan peta offline untuk liburan spontan atau eksplorasi.",
+  "scripts": {
+    "build": "webpack --config ./webpack.prod.js",
+    "start-dev": "webpack serve --config ./webpack.dev.js",
+    "serve": "http-server ./dist --port 3000",
+    "prettier": "prettier . --check",
+    "prettier:write": "prettier . --write",
+    "start": "npm run build && npm run serve"
+  },
+  "keywords": [],
+  "author": "Your Name <your_email>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.25.7",
+    "babel-loader": "^9.2.1",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "http-server": "^14.1.1",
+    "mini-css-extract-plugin": "^2.9.1",
+    "prettier": "^3.4.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-merge": "^6.0.1"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "tiny-slider": "^2.9.4"
+  }
+}
