@@ -123,7 +123,7 @@ export async function registerServiceWorkerAndSubscribe(token) {
   }
   try {
     // Ganti path sw.js agar sesuai dengan base path GitHub Pages
-    const registration = await navigator.serviceWorker.register('/Libur.in-App/sw.js');
+    const registration = await navigator.serviceWorker.register('./sw.js');
     // Minta izin notifikasi
     const permission = await Notification.requestPermission();
     if (permission !== 'granted') return;
