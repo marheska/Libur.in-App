@@ -2,13 +2,16 @@
   "name": "liburinapp",
   "version": "1.0.0",
   "description": "Libur.in App adalah aplikasi jelajah wisata lokal yang membantu pengguna menemukan tempat wisata terdekat dengan ulasan, rute tercepat, dan peta offline untuk liburan spontan atau eksplorasi.",
+  "homepage": "https://marheska.github.io/Libur.in-App",
   "scripts": {
     "build": "webpack --config ./webpack.prod.js",
     "start-dev": "webpack serve --config ./webpack.dev.js",
     "serve": "http-server ./dist --port 3000",
     "prettier": "prettier . --check",
     "prettier:write": "prettier . --write",
-    "start": "npm run build && npm run serve"
+    "start": "npm run build && npm run serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Your Name <your_email>",
@@ -19,6 +22,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "html-webpack-plugin": "^5.6.0",
     "http-server": "^14.1.1",
     "mini-css-extract-plugin": "^2.9.1",
